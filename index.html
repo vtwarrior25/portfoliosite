@@ -1,0 +1,165 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4d1c2ba4f1.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+
+<nav id="leftBar" class="navigationBar centerText dontScroll">
+    <div class="navContainer">
+        <a href="#aboutMe">
+            <i class="fa fa-user fa-2x navIcon"></i>
+            <div class="navItemText">
+                <b>About Me</b>
+            </div>
+        </a>
+    </div>
+    <div class="navContainer">
+        <a href="#projects">
+            <i class="fa-solid fa-2x fa-code navIcon"></i>
+            <div class="navItemText">
+                <b>Projects</b>
+            </div>
+        </a>
+    </div>
+    <div class="navContainer">
+        <a href="#photos">
+            <i class="fa-solid fa-2x fa-camera navIcon"></i>
+            <div class="navItemText">
+                <b>Photos</b>
+            </div>
+        </a>
+    </div>
+    <div class="navContainer">
+        <a href="#links">
+            <i class="fa-solid fa-2x fa-link navIcon"></i>
+            <div class="navItemText">
+                <b>Links</b>
+            </div>
+        </a>
+    </div>
+    <div class="navContainer">
+        <a href="#resume">
+            <i class="fa-solid fa-2x fa-file-lines navIcon"></i>
+            <div class="navItemText">
+                <b>Resumé</b>
+            </div>
+        </a>
+    </div>
+</nav>
+
+
+<main>
+    <section id="aboutMe" class="mainItem">
+        <h2 class="sectionTitle">Nick Steventon</h2>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis purus sit amet. Risus feugiat in ante metus dictum at. Duis at tellus at urna. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Vitae congue mauris rhoncus aenean vel elit. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Tellus at urna condimentum mattis pellentesque id nibh tortor. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. At volutpat diam ut venenatis tellus in. Tortor pretium viverra suspendisse potenti nullam ac. Massa placerat duis ultricies lacus. Tristique senectus et netus et malesuada fames ac. Adipiscing enim eu turpis egestas pretium. A iaculis at erat pellentesque adipiscing commodo elit.
+
+    </section>
+    <section id="projects" class="mainItem">
+        <h2 class="sectionTitle">Projects</h2>
+        <div id="projectsList">
+            <a href="https://github.com/krtookey/clinic" target="_blank">
+                <img src="https://github-readme-stats.vercel.app/api/pin/?username=krtookey&repo=clinic">
+            </a>
+        </div>
+
+    </section>
+    <section id="photos" class="mainItem">
+        <h2 class="sectionTitle">Photos</h2>
+        <!-- Container for the image gallery -->
+        <div class="photoFullSizeContainer">
+            <!-- Full-width images with number text -->
+            <div class="photoFullSize">
+            <div class="numbertext">1 / 9</div>
+                <img src="files/photos/lewisportfoliov1.5final (10 of 20).jpg">
+            </div>
+            <div class="photoFullSize">
+            <div class="numbertext">2 / 9</div>
+                <img src="files/photos/lewisportfoliov1.5final (13 of 20).jpg">
+            </div>
+            <div class="photoFullSize">
+            <div class="numbertext">3 / 9</div>
+                <img src="files/photos/lewisportfoliov1.5final (9 of 20).jpg">
+            </div>
+            <div class="photoFullSize">
+            <div class="numbertext">4 / 9</div>
+                <img src="files/photos/macro_lock_keywayface.jpg">
+            </div>
+            <div class="photoFullSize">
+            <div class="numbertext">5 / 9</div>
+                <img src="files/photos/selfshot_lookingoffinfrontofwindow_oddlighting.jpg">
+            </div>
+            <div class="photoFullSize">
+            <div class="numbertext">6 / 9</div>
+                <img src="files/photos/macropenny.jpg">
+            </div>
+            <div class="photoFullSize">
+                <div class="numbertext">7 / 9</div>
+                    <img src="files/photos/macro_cd_rainbowright.jpg">
+             </div>
+             <div class="photoFullSize">
+                <div class="numbertext">8 / 9</div>
+                    <img src="files/photos/squirrel_peekingaroundtree.jpg">
+             </div>
+             <div class="photoFullSize">
+                <div class="numbertext">9 / 9</div>
+                    <img src="files/photos/backlitleaf_horizontal.jpg">
+             </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+            <div class="photoPreviews">
+                <div class="photoPreviewImage">
+                    <img class="demo cursor" src="files/photos/lewisportfoliov1.5final (10 of 20).jpg" onclick="currentSlide(1);" alt="My Mom and Lewis">
+                </div>
+                <div class="photoPreviewImage">
+                    <img class="demo cursor" src="files/photos/lewisportfoliov1.5final (13 of 20).jpg" onclick="currentSlide(2);" alt="Lewis In Front Of His Tunnel">
+                </div>
+                <div class="photoPreviewImage">
+                    <img class="demo cursor" src="files/photos/lewisportfoliov1.5final (9 of 20).jpg" onclick="currentSlide(3);" alt="Lewis In Front Of His Tunnel As Well">
+                </div>
+                <div class="photoPreviewImage">
+                    <img class="demo cursor" src="files/photos/macro_lock_keywayface.jpg" onclick="currentSlide(4);" alt="Macro Keyway Face">
+                </div>
+                <div class="photoPreviewImage">
+                    <img class="demo cursor" src="files/photos/selfshot_lookingoffinfrontofwindow_oddlighting.jpg" onclick="currentSlide(5);" alt="Self Portrait">
+                </div>
+                <div class="photoPreviewImage">
+                    <img class="demo cursor" src="files/photos/macropenny.jpg" onclick="currentSlide(6);" alt="Macro Penny">
+                </div>
+                <div class="photoPreviewImage">
+                    <img class="demo cursor" src="files/photos/macro_cd_rainbowright.jpg" onclick="currentSlide(7);" alt="Macro CD Rainbow">
+                </div>
+                <div class="photoPreviewImage">
+                    <img class="demo cursor" src="files/photos/squirrel_peekingaroundtree.jpg" onclick="currentSlide(8);" alt="Squirrel Peeking Around Tree">
+                </div>
+                <div class="photoPreviewImage">
+                    <img class="demo cursor" src="files/photos/backlitleaf_horizontal.jpg" onclick="currentSlide(9);" alt="Backlit Leaf at Sunset">
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section id="links" class="mainItem">
+        <h2 class="sectionTitle">Links</h2>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis purus sit amet. Risus feugiat in ante metus dictum at. Duis at tellus at urna. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Vitae congue mauris rhoncus aenean vel elit. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Tellus at urna condimentum mattis pellentesque id nibh tortor. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. At volutpat diam ut venenatis tellus in. Tortor pretium viverra suspendisse potenti nullam ac. Massa placerat duis ultricies lacus. Tristique senectus et netus et malesuada fames ac. Adipiscing enim eu turpis egestas pretium. A iaculis at erat pellentesque adipiscing commodo elit.
+    </section>
+    <section id="resume" class="mainItem">
+        <h2 class="sectionTitle">Resumé</h2>
+        <embed class="pdfEmbed" src="./files/NickSteventonResumev3.1.pdf">
+
+    </section>
+    <footer>
+
+        Things to add:
+        - Pictures of me doing things
+        - Photos I Took (to show photography ability)
+        - 
+    
+    </footer>
+</main>
+
+</body>
+</html>

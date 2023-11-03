@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "Atkinson Hyperlegible";
+    src: url(files/Atkinson-Hyperlegible-Regular-102.ttf);
+  }
+
+body{
+    background-color:black;
+    color:white;
+    font-size: 1.25em;
+    font-family: 'Atkinson Hyperlegible', 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-rows: auto;
+    gap: 1%;
+}
+
+.centerText{
+    text-align: center;
+}
+
+#leftBar {
+    top:0;
+    left:0;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+main {
+    display:grid;
+    grid-area: 1 / 2 / span 1 / span 1;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 30px;
+    animation-name: rise;
+    animation-duration: 0.9s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    margin-top: 5%;
+
+}
+
+.navigationBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: sticky;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding: 2%;
+    gap: 5%;
+}
+
+
+.navIcon {
+    color: white;
+    width: 60%;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 50px;
+}
+
+.navItemText {
+    color: white;
+    text-decoration: none;
+}
+
+.sectionTitle {
+    text-align: center;
+    padding: 0 25% 0 25%;
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
+.pdfEmbed {
+    display: inline-block;
+    min-width: 90%;
+    min-height: 800px;
+    margin: 5%;
+}
+
+#projectsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.photoFullSizeContainer {
+    position: relative;
+}
+
+/* Hide the images by default */
+.photoFullSize {
+    display: none;
+    
+}
+
+.photoFullSize img {
+    display: block;
+    height: 30em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.photoPreviews:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.photoPreviews {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+/* Six columns side by side */
+.photoPreviewImage {
+    width: 16.66%;
+}
+
+.photoPreviewImage img {
+    width: 100%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
