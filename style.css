@@ -1,4 +1,21 @@
 /*
+###########################################################################
+## FILE      : style.css
+## SUBJECT   : PortfolioSite main CSS stylesheet
+## PROGRAMMER: (C) Copyright 2023 by Nicholas J. Steventon
+##
+## Please send comments or bug reports to
+##
+##      Nick Steventon
+##      CIS Student, Man of Interesting Tendencies
+##      Vermont Technical College
+##      Randolph, VT
+##      njs06110@vtc.edu
+###########################################################################
+*/
+
+
+/*
 ------------------------------------------------------------------------
 Overwriting Things
 ------------------------------------------------------------------------
@@ -16,6 +33,7 @@ Defining Variables
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --sectionborder: 0.1em solid #bbb;
     --frontcolor: white;
     --backcolor: black;
     --backcolor2: #222;
@@ -23,7 +41,7 @@ Defining Variables
 }
 
 :root.darkmode {
-  --sectionborder: 0.1em solid #888;
+  --sectionborder: 0.1em solid #bbb;
   --frontcolor: white;
   --backcolor: black;
   --backcolor2: #222;
@@ -31,17 +49,18 @@ Defining Variables
 
 @media (prefers-color-scheme: light) {
   :root {
+    --sectionborder: 0.1em solid #222;
     --frontcolor: black;
-    --backcolor: #CCCCCC;
-    --backcolor2: #222;
+    --backcolor: #ddd;
+    --backcolor2: #bbb;
   }
 }
 
 :root {
   --sectionborder: 0.1em solid #222;
   --frontcolor: black;
-  --backcolor: #CCCCCC;
-  --backcolor2: #222;
+  --backcolor: #ddd;
+  --backcolor2: #bbb;
 }
 
 a {
@@ -82,7 +101,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2%;
-  flex-basis: 100%;
   grid-area: 1 / 2 / span 1 / span 1;
   margin-left: 8%;
   margin-right: 15%;

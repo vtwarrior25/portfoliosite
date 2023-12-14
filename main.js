@@ -1,3 +1,20 @@
+/*
+###########################################################################
+## FILE      : main.js
+## SUBJECT   : PortfolioSite main JS document
+## PROGRAMMER: (C) Copyright 2023 by Nicholas J. Steventon
+##
+## Please send comments or bug reports to
+##
+##      Nick Steventon
+##      CIS Student, Man of Interesting Tendencies
+##      Vermont Technical College
+##      Randolph, VT
+##      njs06110@vtc.edu
+###########################################################################
+*/
+
+
 let slideIndex = 1;
 
 window.addEventListener("load", showInitialSlide, false);
