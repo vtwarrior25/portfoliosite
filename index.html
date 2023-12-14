@@ -1,173 +1,261 @@
-<html>
-<head>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/4d1c2ba4f1.js" crossorigin="anonymous"></script>
+<html class="darkmode">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./files/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="./files/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="./files/fontawesome/css/solid.css">
     <script src="main.js"></script>
-    <link rel="shortcut icon" href="/favicon.png">
-</head>
-<body>
-
-<nav id="leftBar" class="navigationBar centerText dontScroll">
-    <div class="navContainer">
+    <link rel="shortcut icon" href="/favicon.png" />
+  </head>
+  <body>
+    <nav id="leftBar" class="navigationBar centerText dontScroll">
+      <div class="navContainer">
         <a href="#aboutMe">
-            <i class="fa fa-user fa-2x navIcon"></i>
-            <div class="navItemText">
-                <b>About Me</b>
-            </div>
+          <i class="fa fa-user fa-2x navIcon"></i>
+          <div class="navItemText">
+            <b>About Me</b>
+          </div>
         </a>
-    </div>
-    <div class="navContainer">
+      </div>
+      <div class="navContainer">
         <a href="#projects">
-            <i class="fa-solid fa-2x fa-code navIcon"></i>
-            <div class="navItemText">
-                <b>Projects</b>
-            </div>
+          <i class="fa-solid fa-2x fa-code navIcon"></i>
+          <div class="navItemText">
+            <b>Projects</b>
+          </div>
         </a>
-    </div>
-    <div class="navContainer">
+      </div>
+      <div class="navContainer">
         <a href="#photos">
-            <i class="fa-solid fa-2x fa-camera navIcon"></i>
-            <div class="navItemText">
-                <b>Photos</b>
-            </div>
+          <i class="fa-solid fa-2x fa-camera navIcon"></i>
+          <div class="navItemText">
+            <b>Photos</b>
+          </div>
         </a>
-    </div>
-    <div class="navContainer">
+      </div>
+      <div class="navContainer">
         <a href="#links">
-            <i class="fa-solid fa-2x fa-link navIcon"></i>
-            <div class="navItemText">
-                <b>Links</b>
-            </div>
+          <i class="fa-solid fa-2x fa-link navIcon"></i>
+          <div class="navItemText">
+            <b>Links</b>
+          </div>
         </a>
-    </div>
-    <div class="navContainer">
+      </div>
+      <div class="navContainer">
         <a href="#resume">
-            <i class="fa-solid fa-2x fa-file-lines navIcon"></i>
-            <div class="navItemText">
-                <b>Resumé</b>
-            </div>
+          <i class="fa-solid fa-2x fa-file-lines navIcon"></i>
+          <div class="navItemText">
+            <b>Resumé</b>
+          </div>
         </a>
-    </div>
-</nav>
+      </div>
+      <div class="navContainer" onclick="toggleVisualMode()">
+        <i class="fa-solid fa-2x fa-sun navIcon"></i>
+        <div class="navItemText">
+          <b>Dark Mode</b>
+        </div>
+      </div>
+    </nav>
 
-
-<main>
-    <section id="aboutMe" class="mainItem">
+    <main>
+      <section id="aboutMe" class="mainItem">
         <h2 class="sectionTitle">Nick Steventon</h2>
         <div class="sectionContent">
-            My name is Nick Steventon, and I am a Senior at Vermont State University studying Computer Information Technology. <br /><br />
-            I could list a bunch of my credentials and tell you how awesome I am, but I think that my ego is big enough at this point.
+          <p class="descriptionOfMe">
+            My name is Nick Steventon, and I am a Senior at Vermont State
+            University studying Computer Information Technology. <br /><br />
+            I could list a bunch of my credentials and tell you how awesome I
+            am, but I think that my ego is big enough at this point.
+          </p>
         </div>
-    </section>
-    <section id="projects" class="mainItem">
+      </section>
+      <section id="projects" class="mainItem">
         <h2 class="sectionTitle">Projects</h2>
         <div class="sectionContent">
-            <div id="projectsList">
-                <a href="https://github.com/krtookey/clinic" target="_blank">
-                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=krtookey&repo=clinic">
-                </a>
+          <div id="projectsList">
+            <div class="projectsListSection" id="codeProjects">
+              <h3>Code</h3>
+              <a href="https://github.com/krtookey/clinic" target="_blank">
+                <img
+                  src="https://github-readme-stats.vercel.app/api/pin/?username=krtookey&repo=clinic"
+                />
+              </a>
             </div>
+            <div class="projectsListSection" id="literacyProjects">
+              <h3>Other</h3>
+              <a class="paperLinkA" target="_blank" href="./files/papers/snowdenpaper.pdf">
+                <div class="paperLink">
+                  <h4 class="paperLinkText">Utilitarian Analysis of Edward Snowden</h4>
+                </div>
+              </a>
+              <a class="paperLinkA" target="_blank" href="./files/papers/Final Research Paper.pdf">
+                <div class="paperLink">
+                  <h4 class="paperLinkText">Argument for Medicare for All</h4>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-    </section>
-    <section id="photos" class="mainItem">
+      </section>
+      <section id="photos" class="mainItem">
         <h2 class="sectionTitle">Photos</h2>
         <!-- Container for the image gallery -->
         <div class="sectionContent">
-            <div class="photoFullSizeContainer">
-                <!-- Full-width images with number text -->
-                <div class="photoFullSize">
-                <div class="numbertext">1 / 9</div>
-                    <img src="files/photos/lewisportfoliov1.5final (10 of 20).jpg">
-                </div>
-                <div class="photoFullSize">
-                <div class="numbertext">2 / 9</div>
-                    <img src="files/photos/lewisportfoliov1.5final (13 of 20).jpg">
-                </div>
-                <div class="photoFullSize">
-                <div class="numbertext">3 / 9</div>
-                    <img src="files/photos/lewisportfoliov1.5final (9 of 20).jpg">
-                </div>
-                <div class="photoFullSize">
-                <div class="numbertext">4 / 9</div>
-                    <img src="files/photos/macro_lock_keywayface.jpg">
-                </div>
-                <div class="photoFullSize">
-                <div class="numbertext">5 / 9</div>
-                    <img src="files/photos/selfshot_lookingoffinfrontofwindow_oddlighting.jpg">
-                </div>
-                <div class="photoFullSize">
-                <div class="numbertext">6 / 9</div>
-                    <img src="files/photos/macropenny.jpg">
-                </div>
-                <div class="photoFullSize">
-                    <div class="numbertext">7 / 9</div>
-                        <img src="files/photos/macro_cd_rainbowright.jpg">
-                 </div>
-                 <div class="photoFullSize">
-                    <div class="numbertext">8 / 9</div>
-                        <img src="files/photos/squirrel_peekingaroundtree.jpg">
-                 </div>
-                 <div class="photoFullSize">
-                    <div class="numbertext">9 / 9</div>
-                        <img src="files/photos/backlitleaf_horizontal.jpg">
-                 </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                <div class="caption-container">
-                    <p id="caption"></p>
-                </div>
-                <div class="photoPreviews">
-                    <div class="photoPreviewImage">
-                        <img class="demo cursor" src="files/photos/lewisportfoliov1.5final (10 of 20).jpg" onclick="currentSlide(1);" alt="My Mom and Lewis">
-                    </div>
-                    <div class="photoPreviewImage">
-                        <img class="demo cursor" src="files/photos/lewisportfoliov1.5final (13 of 20).jpg" onclick="currentSlide(2);" alt="Lewis In Front Of His Tunnel">
-                    </div>
-                    <div class="photoPreviewImage">
-                        <img class="demo cursor" src="files/photos/lewisportfoliov1.5final (9 of 20).jpg" onclick="currentSlide(3);" alt="Lewis In Front Of His Tunnel As Well">
-                    </div>
-                    <div class="photoPreviewImage">
-                        <img class="demo cursor" src="files/photos/macro_lock_keywayface.jpg" onclick="currentSlide(4);" alt="Macro Keyway Face">
-                    </div>
-                    <div class="photoPreviewImage">
-                        <img class="demo cursor" src="files/photos/selfshot_lookingoffinfrontofwindow_oddlighting.jpg" onclick="currentSlide(5);" alt="Self Portrait">
-                    </div>
-                    <div class="photoPreviewImage">
-                        <img class="demo cursor" src="files/photos/macropenny.jpg" onclick="currentSlide(6);" alt="Macro Penny">
-                    </div>
-                    <div class="photoPreviewImage">
-                        <img class="demo cursor" src="files/photos/macro_cd_rainbowright.jpg" onclick="currentSlide(7);" alt="Macro CD Rainbow">
-                    </div>
-                    <div class="photoPreviewImage">
-                        <img class="demo cursor" src="files/photos/squirrel_peekingaroundtree.jpg" onclick="currentSlide(8);" alt="Squirrel Peeking Around Tree">
-                    </div>
-                    <div class="photoPreviewImage">
-                        <img class="demo cursor" src="files/photos/backlitleaf_horizontal.jpg" onclick="currentSlide(9);" alt="Backlit Leaf at Sunset">
-                    </div>
-                </div>
-            </div> 
-        </div> 
-    </section>
-    <section id="links" class="mainItem">
+          <div class="photoFullSizeContainer">
+            <!-- Full-width images with number text -->
+            <div class="photoFullSize">
+              <div class="numbertext">1 / 9</div>
+              <img src="files/photos/lewisportfoliov1.5final (10 of 20).jpg" />
+            </div>
+            <div class="photoFullSize">
+              <div class="numbertext">2 / 9</div>
+              <img src="files/photos/lewisportfoliov1.5final (13 of 20).jpg" />
+            </div>
+            <div class="photoFullSize">
+              <div class="numbertext">3 / 9</div>
+              <img src="files/photos/lewisportfoliov1.5final (9 of 20).jpg" />
+            </div>
+            <div class="photoFullSize">
+              <div class="numbertext">4 / 9</div>
+              <img src="files/photos/macro_lock_keywayface.jpg" />
+            </div>
+            <div class="photoFullSize">
+              <div class="numbertext">5 / 9</div>
+              <img
+                src="files/photos/selfshot_lookingoffinfrontofwindow_oddlighting.jpg"
+              />
+            </div>
+            <div class="photoFullSize">
+              <div class="numbertext">6 / 9</div>
+              <img src="files/photos/macropenny.jpg" />
+            </div>
+            <div class="photoFullSize">
+              <div class="numbertext">7 / 9</div>
+              <img src="files/photos/macro_cd_rainbowright.jpg" />
+            </div>
+            <div class="photoFullSize">
+              <div class="numbertext">8 / 9</div>
+              <img src="files/photos/squirrel_peekingaroundtree.jpg" />
+            </div>
+            <div class="photoFullSize">
+              <div class="numbertext">9 / 9</div>
+              <img src="files/photos/backlitleaf_horizontal.jpg" />
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+            <div class="photoPreviews">
+              <div class="photoPreviewImage">
+                <img
+                  class="demo cursor"
+                  src="files/photos/lewisportfoliov1.5final (10 of 20).jpg"
+                  onclick="currentSlide(1);"
+                  alt="My Mom and Lewis"
+                />
+              </div>
+              <div class="photoPreviewImage">
+                <img
+                  class="demo cursor"
+                  src="files/photos/lewisportfoliov1.5final (13 of 20).jpg"
+                  onclick="currentSlide(2);"
+                  alt="Lewis In Front Of His Tunnel"
+                />
+              </div>
+              <div class="photoPreviewImage">
+                <img
+                  class="demo cursor"
+                  src="files/photos/lewisportfoliov1.5final (9 of 20).jpg"
+                  onclick="currentSlide(3);"
+                  alt="Lewis In Front Of His Tunnel As Well"
+                />
+              </div>
+              <div class="photoPreviewImage">
+                <img
+                  class="demo cursor"
+                  src="files/photos/macro_lock_keywayface.jpg"
+                  onclick="currentSlide(4);"
+                  alt="Macro Keyway Face"
+                />
+              </div>
+              <div class="photoPreviewImage">
+                <img
+                  class="demo cursor"
+                  src="files/photos/selfshot_lookingoffinfrontofwindow_oddlighting.jpg"
+                  onclick="currentSlide(5);"
+                  alt="Self Portrait"
+                />
+              </div>
+              <div class="photoPreviewImage">
+                <img
+                  class="demo cursor"
+                  src="files/photos/macropenny.jpg"
+                  onclick="currentSlide(6);"
+                  alt="Macro Penny"
+                />
+              </div>
+              <div class="photoPreviewImage">
+                <img
+                  class="demo cursor"
+                  src="files/photos/macro_cd_rainbowright.jpg"
+                  onclick="currentSlide(7);"
+                  alt="Macro CD Rainbow"
+                />
+              </div>
+              <div class="photoPreviewImage">
+                <img
+                  class="demo cursor"
+                  src="files/photos/squirrel_peekingaroundtree.jpg"
+                  onclick="currentSlide(8);"
+                  alt="Squirrel Peeking Around Tree"
+                />
+              </div>
+              <div class="photoPreviewImage">
+                <img
+                  class="demo cursor"
+                  src="files/photos/backlitleaf_horizontal.jpg"
+                  onclick="currentSlide(9);"
+                  alt="Backlit Leaf at Sunset"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="links" class="mainItem">
         <h2 class="sectionTitle">Links</h2>
         <div class="sectionContent">
-            <a href="https://github.com/vtwarrior25" title="Github" target="_blank">
-                <i class="fa fa-github"></i>
+          <div class="linkdiv">
+            <a
+              href="https://github.com/vtwarrior25"
+              title="Github"
+              target="_blank"
+            >
+              <i class="linksIcon fa fa-4x fa-github"></i>
             </a>
-            <a href="https://instagram.com/nicksteventonphotography" title="Instagram" target="_blank">
-                <i class="fa fa-instagram"></i>
+            <a
+              href="https://instagram.com/nicksteventonphotography"
+              title="Instagram"
+              target="_blank"
+            >
+              <i class="linksIcon fa fa-4x fa-instagram"></i>
             </a>
+            <a
+              href="https://instagram.com/nicksteventonphotography"
+              title="Linkedin"
+              target="_blank"
+            >
+              <i class="linksIcon fa fa-4x fa-linkedin"></i>
+            </a>
+          </div>
         </div>
-    </section>
-    <section id="resume" class="mainItem">
+      </section>
+      <section id="resume" class="mainItem">
         <h2 class="sectionTitle">Resumé</h2>
-        <embed class="pdfEmbed" src="./files/NickSteventonResumev3.1.pdf">
-
-    </section>
-    <footer>
-    
-    </footer>
-</main>
-
-</body>
+        <embed class="pdfEmbed" src="./files/NickSteventonResumev3.1.pdf" />
+      </section>
+      <footer></footer>
+    </main>
+  </body>
 </html>

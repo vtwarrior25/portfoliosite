@@ -1,3 +1,7 @@
+let slideIndex = 1;
+
+window.addEventListener("load", showInitialSlide, false);
+
 function showOneElementOfClass(elementnametoshow, classname){
     var elements = document.querySelectorAll("."+classname);
     for (var element in elements){
@@ -10,6 +14,13 @@ function showOneElementOfClass(elementnametoshow, classname){
 
 
 
+
+/*
+------------------------------------------------------------------------
+Image Viewer Code
+Courtesy of https://www.w3schools.com/howto/howto_js_slideshow.asp
+------------------------------------------------------------------------
+*/
 
 function showSlides(n) {
   let i;
@@ -30,11 +41,10 @@ function showSlides(n) {
 }
 
 
-let slideIndex = 1;
-window.addEventListener("load", showInitialSlide, false);
 
 function showInitialSlide() {
   showSlides(slideIndex);
+  console.log('showing initial slide');
 }
 
 // Next/previous controls
@@ -45,4 +55,36 @@ function plusSlides(n) {
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
+}
+
+/*
+function toggleVisualMode() {
+  let darkbackcolor = 'black';
+  let darkfrontcolor = 'white';
+  let lightbackcolor = 'white';
+  let lightfrontcolor = 'black';
+  let root = document.querySelector(':root');
+  let st = getComputedStyle(root);
+
+  console.log(st.getPropertyValue('--frontcolor'));
+  if (st.getPropertyValue('--frontcolor') === lightbackcolor) {
+    console.log('darkmode')
+    root.style.setProperty('--frontcolor', darkfrontcolor);
+    root.style.setProperty('--backcolor', darkbackcolor);
+    console.log(getComputedStyle(root));
+  } else if (st.getPropertyValue('--frontcolor') === darkbackcolor) {
+    console.log('lightmode')
+    root.style.setProperty('--frontcolor', lightfrontcolor);
+    root.style.setProperty('--backcolor', lightbackcolor);
+}
+*/
+  /*
+    --sectionborder: 2px bold #ffffff; 
+    --frontcolor: white;
+    --backcolor: black;
+  */
+
+function toggleVisualMode() {
+  let rootel = document.querySelector(':root');
+  rootel.classList.toggle('darkmode');
 }
